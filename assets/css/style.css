@@ -2,15 +2,39 @@
     margin: .1rem;
     padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 img {
-    width: 100%;
+    width: 50%;
+}
+
+.toCover {
+    position:relative;
+  margin:0 auto;
+  width:100%;
+  overflow:hidden;
+    
+}
+
+.toCover:before {
+    position: absolute;
+  top: 0; left: 0;
+  width:100%;
+  overflow:hidden;
+
+}
+
+.toCover:hover:before {
+    background-color: rgb(58, 54, 54);
+    box-shadow: 100%;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
+    position:relative;
+  
 }
 
 @media (min-width: 768px) {
